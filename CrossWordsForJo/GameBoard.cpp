@@ -149,7 +149,7 @@ Cords GameBoard::GetWorldCords(Cords crossPoint) {
 bool GameBoard::RecursiveValInput(string input, Cords crossPoint) {
 	PlacedWord temp = placedWords[placedWords.size() - 1];
 	for (int i = 0; i < placedWords.size(); i++) {
-		if (input == placedWords[i]) {
+		if (input == placedWords[i].baseWord) {
 			return false;
 		}
 	}
